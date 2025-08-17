@@ -194,3 +194,67 @@ Write a method to convert Fahrenheit to Celsius.
 Write a method that takes a string and returns it in reverse.
 
 Write a method to check if a number is a palindrome. */
+
+// 1. Sum of two numbers
+//With parameters and returntype
+class main{
+    public static int sum(int a, int b){
+        return a+b;
+    }
+    public static void main(String args[]){
+        int result=sum(4,5);
+        System.out.println("Sum of two numbers is " +result);
+    }
+}
+
+// with parameters and without returntype
+class main{
+    public static void sum(int a, int b){
+        System.out.println("Sum of two numbers is "+(a+b));
+    }
+    public static void main(String args[]){
+        sum(5,6);
+    }
+}
+
+// without parameters and with returntype
+class main{
+    public static int sum(){
+        int a=5,b=9;
+        return a+b;
+    }
+    public static void main(String args[]){
+        int add=sum();
+        System.out.println("Sum is "+add);
+    }
+}
+
+//without parameters and without returntype
+class main{
+    public static void sum(){
+        int a=3,b=8;
+        System.out.println("Sum of two numbers is "+(a+b));
+    }
+    public static void main(String args[]){
+        sum();
+    }
+}
+
+// 2.  Write a function max(int a, int b, int c) that returns the largest of three numbers.
+class main{
+    public static String largestNumber(int a,int b,int c){
+        if(a>b && a>c){
+            return "a is largest number";
+        }else if(b>a && b>c){
+            return "b is largest number";
+        }else if(c>a && c>b){
+            return "c is largest number";
+        }else{
+            return "Invalid number";
+        }
+    }
+    public static void main(String args[]){
+        System.out.println(largestNumber(4,3,8));
+    }
+}
+
